@@ -2,7 +2,7 @@
   "name": "llms-api-node",
   "version": "1.0.0",
   "description": "Node.js wrapper for the LifterLMS REST API",
-  "main": "index.js",
+  "main": "lifterlms-api.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "lint-fix": "./node_modules/.bin/eslint . --fix",
