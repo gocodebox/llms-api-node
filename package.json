@@ -1,0 +1,36 @@
+{
+  "name": "llms-api-node",
+  "version": "0.0.1",
+  "description": "Node.js wrapper for the LifterLMS REST API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint . --fix",
+    "test": "_mocha tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocodebox/llms-api-node.git"
+  },
+  "keywords": [
+    "LifterLMS"
+  ],
+  "author": "Team LifterLMS <team@lifterlms.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gocodebox/llms-api-node/issues"
+  },
+  "homepage": "https://github.com/gocodebox/llms-api-node#readme",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.isempty": "^4.4.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "mocha": "^6.2.0",
+    "nock": "^10.0.6"
+  }
+}

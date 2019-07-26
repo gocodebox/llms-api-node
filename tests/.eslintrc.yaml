@@ -1,0 +1,7 @@
+env:
+  mocha: true
+rules:
+  max-lines: 'off'
+  max-lines-per-function: 'off'
+  no-unused-expressions: warn
+  no-undefined: warn
