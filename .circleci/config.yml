@@ -31,6 +31,10 @@ jobs:
             chmod +x ./cc-test-reporter
 
       - run:
+          name: Lint
+          command: npm run lint
+
+      - run:
           name: Run Tests
           command: |
             ./cc-test-reporter before-build
