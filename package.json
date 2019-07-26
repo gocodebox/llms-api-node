@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "lint-fix": "./node_modules/.bin/eslint . --fix",
-    "test": "nyc _mocha tests/*.js"
+    "test": "nyc --temp-dir=./tmp/.nyc_output _mocha tests/*.js"
   },
   "repository": {
     "type": "git",
