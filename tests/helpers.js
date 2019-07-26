@@ -8,7 +8,7 @@
 'use strict';
 
 const
-	LifterLMS = require( '../index.js' );
+	LifterLMS = require( '../lifterlms-api.js' );
 
 /**
  * Retrieve instance of LifterLMS API
