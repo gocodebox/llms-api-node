@@ -1,3 +1,10 @@
+/**
+ * Test Helpers
+ *
+ * @since 1.0.0
+ * @version 1.0.0
+ */
+
 'use strict';
 
 const
@@ -6,7 +13,7 @@ const
 /**
  * Retrieve instance of LifterLMS API
  *
- * @since [version]
+ * @since 1.0.0
  *
  * @param object options options to assign to the API instance.
  * @param bool merge if true, merges options with default mock options.
