@@ -73,6 +73,18 @@ describe( 'Request', () => {
 
 			} );
 
+			it( 'should accept an endpoint with or without a leading slash', () => {
+
+				const
+					api = getInstance(),
+					req = new Request( api, 'llms/v1' );
+
+				chai.assert.equal( req._getURL( 'courses' ), 'https://ck_mock:cs_mock@mock.test/wp-json/llms/v1/courses' );
+				chai.assert.equal( req._getURL( '/courses' ), 'https://ck_mock:cs_mock@mock.test/wp-json/llms/v1/courses' );
+
+			} );
+
+
 		} );
 
 		describe( '_getRequestArgs', () => {
