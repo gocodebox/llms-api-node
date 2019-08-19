@@ -1,6 +1,12 @@
 LifterLMS REST API Wrapper - Node.js - Changelog
 ================================================
 
+v1.0.4 - 2019-08-19
+-------------------
+
++ Add `patch()` and `patchAsync()` methods.
+
+
 v1.0.3 - 2019-08-15
 -------------------
 

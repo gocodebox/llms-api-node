@@ -226,6 +226,21 @@ describe( 'Request', () => {
 
 			} );
 
+			it( 'should return content for patch requests', done => {
+
+				const req_data = { title: 'test' };
+
+				nock( 'https://mock.test/wp-json/llms/v1' ).patch( '/courses', req_data ).
+					reply( 200, req_data );
+
+				req.patch( 'courses', req_data, function( err, data ) {
+					chai.expect( err ).to.not.exist;
+					chai.expect( data ).be.a.string;
+					done();
+				} );
+
+			} );
+
 			it( 'should return content for delete requests', done => {
 
 				nock( 'https://mock.test/wp-json/llms/v1' ).delete( '/courses' ).
